@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filme – cineX</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="cineX Logo" class="logo">
+      <h1>cineX</h1>
+    </div>
+    <nav>
+      <button id="menu-toggle">☰</button>
+      <ul id="menu">
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="filme.html" class="active">Filme</a></li>
+        <li><a href="ueberuns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Aktuelles Kinoprogramm</h2>
+    <p>Hier findest du unsere aktuellen Filme, Spielzeiten und Säle.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Film</th>
+          <th>Genre</th>
+          <th>Spielzeit</th>
+          <th>Saal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Der letzte Stern</td>
+          <td>Science Fiction</td>
+          <td>18:30 Uhr</td>
+          <td>Saal 1</td>
+        </tr>
+        <tr>
+          <td>Liebe über den Wolken</td>
+          <td>Romantik</td>
+          <td>20:15 Uhr</td>
+          <td>Saal 2</td>
+        </tr>
+        <tr>
+          <td>Dark City</td>
+          <td>Thriller</td>
+          <td>22:00 Uhr</td>
+          <td>Saal 3</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <section class="movie-gallery">
+      <h3>Jetzt im Kino</h3>
+      <div class="movie-grid">
+        <div class="movie-card" data-title="Der letzte Stern" data-genre="Science Fiction" data-desc="Ein episches Sci-Fi Abenteur.">
+          <img src="images/Medien (9).jpg" alt="Der letzte Stern Poster">
+          <h4>Der letzte Stern</h4>
+        </div>
+
+        <div class="movie-card" data-title="Liebe über den Wolken" data-genre="Romantik" data-desc="Eine herzerwärmende Geschichte von zwei Menschen deren Schiksal sich kreuzt">
+          <img src="images/Medien (7).jpg" alt="Liebe über den Wolken Poster">
+          <h4>Liebe über den Wolken</h4>
+        </div>
+
+        <div class="movie-card" data-title="Dark City" data-genre="Thriller" data-desc="Ein fesselnder Thriller mit spannendem Plotwist">
+          <img src="images/Medien (8).jpg" alt="Dark City Poster">
+          <h4>Dark City</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="food-drinks">
+      <h3>Snacks & Getränke</h3>
+      <div class="menu-list">
+        <div class="menu-item">
+          <h4>Popcorn</h4>
+          <p>süß oder salzig – frisch zubereitet.</p>
+        </div>
+        <div class="menu-item">
+          <h4>Nachos</h4>
+          <p>mit Käsesauce oder Salsa-Dip.</p>
+        </div>
+        <div class="menu-item">
+          <h4>Getränke</h4>
+          <p>Softdrinks, Wasser</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="opening-hours">
+      <h3>Öffnungszeiten</h3>
+      <ul>
+        <li><strong>Montag – Donnerstag:</strong> 14:00 – 23:00 Uhr</li>
+        <li><strong>Freitag:</strong> 14:00 – 01:00 Uhr</li>
+        <li><strong>Samstag:</strong> 12:00 – 01:00 Uhr</li>
+        <li><strong>Sonntag:</strong> 12:00 – 23:00 Uhr</li>
+      </ul>
+    </section>
+  </main>
+
+  <div id="movieModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 cineX | <a href="impressum.html">Impressum</a></p>
+  </footer>
+  <script defer src="script.js"></script>
+</body>
+</html>

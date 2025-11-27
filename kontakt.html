@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt – cineX</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="cineX Logo" class="logo">
+      <h1>cineX</h1>
+    </div>
+    <nav>
+      <button id="menu-toggle">☰</button>
+      <ul id="menu">
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="filme.html">Filme</a></li>
+        <li><a href="ueberuns.html">Über uns</a></li>
+        <li><a href="kontakt.html" class="active">Kontakt</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact">
+      <h2>Kontaktiere uns</h2>
+      <p>Hast du Fragen zu unseren Filmen, Sälen oder Reservierungen? Schreib uns einfach!</p>
+
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Nachricht senden</button>
+      </form>
+    </section>
+    <section class="address">
+      <h3>Adresse & Standort</h3>
+      <div class="address-container">
+        <div class="address-info">
+          <p><strong>cineX Kinozentrum</strong></p>
+          <p>Lorrainenstrasse 1</p>
+          <p>3013 Bern</p>
+          <p><strong>Telefon:</strong> +41 01 033 05 10</p>
+          <p><strong>E-Mail:</strong> info@cinex.ch</p>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2768.123456789123!2d7.439000000000000!3d46.95300000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478f…!2sLorrainestrasse%201%2C%203013%20Bern!5e0!3m2!1sde!2sch!4v1700000000000!5m2!1sde!2sch"
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 cineX | <a href="impressum.html">Impressum</a></p>
+  </footer>
+  <script defer src="script.js"></script>
+</body>
+</html>

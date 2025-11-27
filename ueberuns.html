@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Über uns – cineX</title>
+  <meta name="description" content="Erfahre mehr über cineX – unser Team, unsere Geschichte und unsere Leidenschaft für Kino.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header role="banner">
+    <div class="logo-container">
+      <a href="index.html" aria-label="Zur Startseite">
+        <img src="images/logo.png" alt="cineX Logo" class="logo">
+      </a>
+      <h1>cineX</h1>
+    </div>
+    <nav aria-label="Hauptnavigation">
+      <button id="menu-toggle" aria-label="Menü öffnen oder schließen" aria-expanded="false">☰</button>
+      <ul id="menu">
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="filme.html">Filme</a></li>
+        <li><a href="ueberuns.html" class="active">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="events.html">Events</a></li>        
+        <li><a href="impressum.html">Impressum</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Über cineX</h2>
+    <div class="two-columns">
+      <div class="column-text">
+        <h3>Über uns</h3>
+        <p>cineX steht für ein modernes Kinoerlebnis mit Stil. 
+        Seit über 20 Jahren bringen wir Filmkunst, Unterhaltung und Emotionen auf die große Leinwand.
+        Mit modernster Technik und bestem Sound ist jeder Besuch ein Erlebnis.</p>
+        <p>Unser Team sorgt täglich dafür, dass dein Kinobesuch reibungslos und unvergesslich ist. 
+        Ob Sci-Fi, Action oder Romantik – bei uns ist für jeden etwas dabei</p>
+      </div>
+      <div class="column-gallery">
+        <div class="gallery-grid">
+          <img src="images/Medien (5).jpg" alt="Kino Innenraum" loading="lazy">
+          <img src="images/Medien (16).jpg" alt="Kinosaal" loading="lazy">
+          <img src="images/Medien (14).jpg" alt="Foyer" loading="lazy">
+          <img src="images/Medien (15).jpg" alt="Popcorn" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+  <section class="team">
+    <h3>Unser Team</h3>
+    <p>Hinter cineX steht ein leidenschaftliches Team - Gemeinsam möchten wir ein möglichst schönes Kinoerlebnis bieten</p>
+
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="images/Medien (1).jpg" alt="Max Müller – Geschäftsführer">
+        <h4>Max Mustermann</h4>
+        <span>Geschäftsführer</span>
+        <p>Langjähriger Geschäftsfüherer und Gründer des CineX</p>
+      </div>
+
+      <div class="team-member">
+        <img src="images/Medien (1).jpg" alt="Anna Schmid – Marketing & Events">
+        <h4>Anna Schmid</h4>
+        <span>Marketing & Events</span>
+        <p>Zuständig für das planen von Events und Marketing</p>
+      </div>
+
+      <div class="team-member">
+        <img src="images/Medien (1).jpg" alt="Lukas Steiner – Technikleiter">
+        <h4>Lukas Steiner</h4>
+        <span>Technikleiter</span>
+        <p>Verantwortlich für Technik</p>
+      </div>
+
+      <div class="team-member">
+        <img src="images/Medien (1).jpg" alt="Sara Müller – Facilitymanagerin">
+        <h4>Sara Müller</h4>
+        <span>Facilitymanagerin</span>
+        <p>Zuständig für die Sauberkeit in unseren Räumen</p>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; <span id="year"></span> cineX | <a href="impressum.html">Impressum</a></p>
+  </footer>
+  <script defer src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cineX – Dein Kinoerlebnis</title>
+  <meta name="description" content="Erlebe Kino neu bei cineX – modernste Technik, beeindruckender Sound und exklusives Ambiente.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header role="banner">
+    <div class="logo-container">
+      <a href="index.html" aria-label="Zur Startseite">
+        <img src="images/logo.png" alt="cineX Logo" class="logo">
+      </a>
+      <h1>cineX</h1>
+    </div>
+    <nav aria-label="Hauptnavigation">
+      <button id="menu-toggle">☰</button>
+      <ul id="menu">
+        <li><a href="index.html" class="active">Startseite</a></li>
+        <li><a href="filme.html">Filme</a></li>
+        <li><a href="ueberuns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="impressum.html">Impressum</a></li> 
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-background">
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <h2>Willkommen im cineX</h2>
+            <p>Erlebe Kino neu – mit modernster Technik, atemberaubendem Sound und exklusivem Ambiente. 
+            Dein Kinoabend wird zum Erlebnis!</p>
+            <a href="filme.html" class="btn">Jetzt Filme entdecken</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h3>Unsere Highlights</h3>
+      <div class="slider">
+        <button class="prev" aria-label="Vorheriges Bild">‹</button>
+        <img src="images/Medien (2).jpg" alt="Kino Impression">
+        <button class="next" aria-label="Nächstes Bild">›</button>
+      </div>
+    </section>
+
+    <section class="werte">
+      <h3>Unsere Werte</h3>
+      <p>Damit dein Besuch im cineX für alle zum Vergnügen wird, legen wir großen Wert auf ein respektvolles und angenehmes Miteinander.</p>
+
+      <div class="werte-grid">
+        <div class="wert">
+          <h4>Respekt & Rücksicht</h4>
+          <p>Wir möchten, dass sich alle Gäste wohlfühlen – bitte vermeide lautes Reden oder Telefonieren während des Films.</p>
+        </div>
+        <div class="wert">
+          <h4>Sauberkeit</h4>
+          <p>Halte deinen Platz sauber. Abfälle kannst du beim Verlassen einfach in unsere bereitgestellten Abfallkübel werfen.</p>
+        </div>
+        <div class="wert">
+          <h4>Handyfreie Zone</h4>
+          <p>Bitte schalte dein Handy lautlos, um das Filmerlebnis nicht zu stören.</p>
+        </div>
+        <div class="wert">
+          <h4>Freundlichkeit</h4>
+          <p>Unser Team ist immer da – sprich uns gerne an, wenn du Fragen oder sonstige anmerkungen hast!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; <span id="year"></span> cineX | <a href="impressum.html">Impressum</a></p>
+  </footer>
+  <script defer src="script.js"></script>
+</body>
+</html>
